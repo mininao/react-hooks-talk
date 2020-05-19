@@ -24,7 +24,7 @@ export const EditUserAddressHooks = () => {
 };
 
 const useUserAddress = () => {
-  const [address, setAddress] = useState("in there");
+  const [address, setAddress] = useState();
   const user = useSelector((state) => state.user);
   const dispatch = useDispatch();
   const updateUser = () => {
